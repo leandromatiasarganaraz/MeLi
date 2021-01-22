@@ -1,0 +1,36 @@
+##Repositorio GITHUB##
+https://github.com/leandromatiasarganaraz/MeLi.git
+##Ejercicio - SQL RESPUESTA##
+SELECT SUM(cantidaddeenvios.cantidaddeenvios * costos.costo) FROM costos
+INNER JOIN cantidaddeenvios
+JOIN Carrier ON Carrier.CarrierID = Costos.CarrierID  
+WHERE zona = AMBA;
+SELECT SUM(cantidaddeenvios.cantidaddeenvios * costos.costo) FROM costos
+INNER JOIN cantidaddeenvios
+JOIN Carrier ON Carrier.CarrierID = Costos.CarrierID  
+WHERE zona = Bs As;
+SELECT SUM(cantidaddeenvios.cantidaddeenvios * costos.costo) FROM costos
+INNER JOIN cantidaddeenvios
+JOIN Carrier ON Carrier.CarrierID = Costos.CarrierID  
+WHERE zona = Resto;
+
+Carrier A AMBA $40000
+Carrier B AMBA $600000
+Carrier C AMBA $1.200.000
+
+Carrier A BS AS $10000
+Carrier B BS AS $95000
+
+Carrier A RESTO $300000
+Carrier B RESTO $330000
+
+La propuesta que haria seria usar el Carrier A debido a que es el que mas bajo costo tiene.
+
+##Lectura y comprensión Script básico grails##
+
+A mi entender el script imprime por pantalla sucursal,fecha y descripcion de Algun producto
+
+##Script básico bash##
+El Output del Script A mi entender devuelve las preferencias de envío de distintos usuarios.
+En la segunda linea se agrupan los id como de usuarios y luego se van consultado a la api la cual devuelve dichas preferencias.
+
